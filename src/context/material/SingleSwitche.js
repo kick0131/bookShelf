@@ -3,7 +3,7 @@ import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-const SingleSwitche = (props) => {
+export default (props) => {
     const TRUE_LABEL='貸出中';
     const FALSE_LABEL='返却済';
 
@@ -38,5 +38,3 @@ const SingleSwitche = (props) => {
         </div>
     );
 }
-
-export default SingleSwitche;

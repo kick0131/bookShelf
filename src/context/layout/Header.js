@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Header = (props) => {
+export default () => {
     return (
         <header>本の貸出帖</header>
     );
 }
-
-export default Header;

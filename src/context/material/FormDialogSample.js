@@ -10,7 +10,7 @@ import Rating from '@material-ui/lab/Rating';
 import { BookShelfContext } from '../../App'
 
 // 登録ダイアログ
-export default function FormDialog() {
+export default () => {
     // ダイアログ表示状態
     const [dialogView, setDialogView] = useState(false);
 

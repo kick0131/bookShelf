@@ -11,7 +11,7 @@ import { BookShelfContext } from '../../App'
 // </BookShelfContext.Provider>
 // 
 
-const RegistBook = (props) => {
+export default (props) => {
     // 登録要素(タイトル、説明)
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -42,5 +42,3 @@ const RegistBook = (props) => {
             </div>
         </form>);
 }
-
-export default RegistBook;

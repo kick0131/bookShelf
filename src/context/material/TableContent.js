@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 // テーブル部分
-export default function TableContent() {
+export default () => {
     // スタイル定義
     const classes = useStyles();
 

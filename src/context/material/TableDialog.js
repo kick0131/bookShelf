@@ -12,12 +12,12 @@ import TableContent from './TableContent'
 
 
 // テーブル表示ダイアログ
-export default function TableDialog() {
+export default () => {
     // ダイアログ表示状態
     const [tableDialogView, setTableDialogView] = useState(false);
 
     // レコード削除位置
-    const [deleteIdx, setDeleteIdx] = useState(-1);
+    const [deleteIdx] = useState(-1);
 
     // 親コンポーネントから更新用のハンドラと更新元情報を取得
     const bookshelf = useContext(BookShelfContext);
