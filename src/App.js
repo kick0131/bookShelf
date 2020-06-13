@@ -11,7 +11,7 @@ export const BookShelfContext = createContext('');
 // 登録された書籍をリスト表示
 // 登録ボタン(登録ダイアログ表示)
 // 削除ボタン(削除ダイアログ表示)
-function App() {
+export default () => {
 
   // 書籍リストの初期状態
   const [booklist, setBooklist]
@@ -27,7 +27,8 @@ function App() {
   };
   const resource = getResource();
 
-  return (
+  // 描画内容
+  const renderParam = (
     <div className="App my-grid">
       <Header className='my-grid-item' />
       <aside className='my-grid-item'>
@@ -48,6 +49,6 @@ function App() {
       <footer className='my-grid-item'>Writtened by C.H@2020</footer>
     </div>
   );
-}
 
-export default App;
+  return renderParam;
+}
